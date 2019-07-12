@@ -1,18 +1,15 @@
-plugins {
-    id 'org.springframework.boot' version '2.1.4.RELEASE'
-    id 'java'
-}
+group 'com.github.lushit'
+version '1.0.0'
 
-group = 'com.github.lushit'
-version = '1.0.0'
-sourceCompatibility = '1.8'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
 
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
 }
-
 configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
@@ -25,9 +22,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.1.4.RELEASE'
     implementation 'com.github.lushit:core_base:master-SNAPSHOT'
     implementation 'com.google.code.gson:gson:2.8.5'
     compileOnly 'org.json:json:20180813'
