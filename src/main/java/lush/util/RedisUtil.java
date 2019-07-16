@@ -2,8 +2,8 @@ package lush.util;
 
 import java.util.HashMap;
 import java.util.List;
+import lush.enm.ExceptionType;
 import lush.enm.redis.RedisType;
-import lush.eunm.ExceptionType;
 import lush.exception.BaseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
