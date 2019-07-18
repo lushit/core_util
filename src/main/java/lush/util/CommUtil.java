@@ -266,8 +266,6 @@ public class CommUtil {
 		// Object의 Type Name
 		String typeName = obj.getClass().getTypeName();
 		
-		System.out.println(typeName);
-		
 		// Type 별 Null Check
 		// String
 		if(typeName.equals("java.lang.String")) {
@@ -300,9 +298,6 @@ public class CommUtil {
 		else if(typeName.equals("java.util.LinkedHashMap")) {
 			// 받은값을 List로 변형
 			LinkedHashMap map = (LinkedHashMap) obj;
-			
-			System.out.println(map.toString());
-			System.out.println(map.isEmpty());
 			
 			// List가 비어있는지 Check
 			if(map.isEmpty()) {
