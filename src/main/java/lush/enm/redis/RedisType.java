@@ -25,7 +25,10 @@ public enum RedisType {
 	/**
 	 * 시스템 관리
 	 */
-	//
+	// 코드 마스터 전체 목록
+	, CODE_MST_LIST("CODE_MST_LIST", "List")
+	// 코드 상세 목록
+	, CODE_DTL_LIST("CODE_DTL_LIST", "List")
 	
 	/**
 	 * 매장관리
